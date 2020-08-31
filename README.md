@@ -25,8 +25,6 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
-Here is a link to the deployed webpage: []
-
 ## Website Features
 1) 
 2) 
