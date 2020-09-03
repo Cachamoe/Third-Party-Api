@@ -1,7 +1,7 @@
 var buttons = document.querySelector("#button-addon2");
 
 var Inputs = {
-
+    
 
 };
 
