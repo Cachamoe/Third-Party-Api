@@ -24,7 +24,7 @@ body {
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
 }
 
 .hour {
@@ -51,11 +51,13 @@ body {
 }
 
 .saveBtn {
+  height: 80px;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  border-top: 1px solid white;
 }
 
 .saveBtn i:hover {
@@ -64,10 +66,11 @@ body {
 }
 
 .saveIcon {
-  color: white !important;
-  font-size: 2em;
-  overflow: hidden;
-  padding: 7px;
+  color: white;
+  font-size: 1.5em;
+  overflow: hidden; 
+  padding: 25%;
+  position: relative; bottom: 20px;
 }
 
 .textInput {

@@ -1,7 +1,8 @@
 // Append current date and time (top of page)
 $("#currentDay").append(moment().format('LLLL'));
 
-// Store data inputs for each hour
+
+// Store and retrieve data inputs for each hour
 var saveBtn = document.getElementById("#saveBtn");
 $(document).ready(function () {
     $("*[data-store]").each(function () {
@@ -37,7 +38,7 @@ $(document).ready(function () {
 })
 
 
-// Display hours (9-5)
+// Display hours (9-5) 
 let currentHour = moment().hours();
 var nine = moment().hours(9).format("hA");
 $("#time-9").text(nine);
@@ -51,8 +52,8 @@ var thirteen = moment().hours(13).format("hA");
 $("#time-13").text(thirteen);
 var fourteen = moment().hours(14).format("hA");
 $("#time-14").text(fourteen);
-var fifthteen = moment().hours(15).format("hA");
-$("#time-15").text(fifthteen);
+var fifteen = moment().hours(15).format("hA");
+$("#time-15").text(fifteen);
 var sixteen = moment().hours(16).format("hA");
 $("#time-16").text(sixteen);
 var seventeen = moment().hours(17).format("hA");
