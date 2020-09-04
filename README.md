@@ -3,7 +3,7 @@
 ![](/image2/screenshot.png)
 
 ## Overview
-This website
+This website allows the user to input and save their work schedule for the day!
 
 Here is a link to the deployed webpage: []
 
@@ -26,14 +26,13 @@ THEN the saved events persist
 ```
 
 ## Website Features
-1) 
-2) 
-3) 
-4)
+1) The current date and time posted at the top of the page for convenience
+2) Type in and save your hourly work schedule for the day
+3) See what you have left to do in relation to the time that has already passed
 
 
 ## Programs 
-HTML and CSS
+HTML, CSS, Javascript
 
 ## Author/s
 Caleb Chaney
