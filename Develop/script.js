@@ -1,80 +1,78 @@
-var buttons = document.querySelector("#button-addon2");
-
-var Inputs = {
-    
-
-};
-
-$("#9AM");
-$("#10AM");
-$("#11AM");
-$("#12PM");
-$("#1PM");
-$("#2PM");
-$("#3PM");
-$("#4PM");
-$("#5PM");
-
+// Append current date and time (top of page)
 $("#currentDay").append(moment().format('LLLL'));
-console.log(moment().hour());
+
+// Store data inputs for each hour
+var saveBtn = document.getElementById("#saveBtn");
+$(document).ready(function () {
+    $("*[data-store]").each(function () {
+        $(this).val(localStorage.getItem("item" + $(this).attr("data-store")));
+    });
+    $("#saveBtn1").on("click", function () {
+        localStorage.setItem("item" + $("#textArea1").attr("data-store"), textArea1.value);
+    });
+    $("#saveBtn2").on("click", function () {
+        localStorage.setItem("item" + $("#textArea2").attr("data-store"), textArea2.value);
+    });
+    $("#saveBtn3").on("click", function () {
+        localStorage.setItem("item" + $("#textArea3").attr("data-store"), textArea3.value);
+    });
+    $("#saveBtn4").on("click", function () {
+        localStorage.setItem("item" + $("#textArea4").attr("data-store"), textArea4.value);
+    });
+    $("#saveBtn5").on("click", function () {
+        localStorage.setItem("item" + $("#textArea5").attr("data-store"), textArea5.value);
+    });
+    $("#saveBtn6").on("click", function () {
+        localStorage.setItem("item" + $("#textArea6").attr("data-store"), textArea6.value);
+    });
+    $("#saveBtn7").on("click", function () {
+        localStorage.setItem("item" + $("#textArea7").attr("data-store"), textArea7.value);
+    });
+    $("#saveBtn8").on("click", function () {
+        localStorage.setItem("item" + $("#textArea8").attr("data-store"), textArea8.value);
+    });
+    $("#saveBtn9").on("click", function () {
+        localStorage.setItem("item" + $("#textArea9").attr("data-store"), textArea9.value);
+    });
+})
 
 
-$(".timeCheck").each(function() {
-    let check = localStorage.get("id");
-    if(check != null) {
-        $(this).value(check);
-    }
-});
+// Display hours (9-5)
+let currentHour = moment().hours();
+var nine = moment().hours(9).format("hA");
+$("#time-9").text(nine);
+var ten = moment().hours(10).format("hA");
+$("#time-10").text(ten);
+var eleven = moment().hours(11).format("hA");
+$("#time-11").text(eleven);
+var twelve = moment().hours(12).format("hA");
+$("#time-12").text(twelve);
+var thirteen = moment().hours(13).format("hA");
+$("#time-13").text(thirteen);
+var fourteen = moment().hours(14).format("hA");
+$("#time-14").text(fourteen);
+var fifthteen = moment().hours(15).format("hA");
+$("#time-15").text(fifthteen);
+var sixteen = moment().hours(16).format("hA");
+$("#time-16").text(sixteen);
+var seventeen = moment().hours(17).format("hA");
+$("#time-17").text(seventeen);
 
-localStorage.set("9am", "");
+changetimeColor();
 
-
-// A) Render 
-retrieveItems();
-
-function renderInputs() {
-
-    for (var i = 0; i < Inputs.length; i++) {
-        var input = Inputs[i];
-    }
+// Function for changing background colors as time passes
+function changetimeColor() {
+    $(".hour").each(function () {
+        var hourChoices = parseInt($(this).attr("id").split("-")[1]);
+        if (hourChoices < currentHour) {
+            $(this).addClass("past");
+            $(this).removeClass("present", "future");
+        } else if (hourChoices === currentHour) {
+            $(this).addClass("present");
+            $(this).removeClass("past", "future");
+        } else {
+            $(this).addClass("future");
+            $(this).removeClass("past", "present");
+        }
+    })
 }
-
-
-// B) Retrieve Items
-function retrieveItems() {
-
-    var storedItems = JSON.parse(localStorage.getItem("Inputs"))
-
-    if (storedItems !== null) {
-        Inputs = storedItems;
-    }
-
-    console.log(Inputs)
-
-    renderInputs();
-}
-
-
-// C) Store Items
-function storeItems() {
-    localStorage.setItem("Inputs", JSON.stringify(Inputs));
-
-    retrieveItems();
-}
-
-
-// D) When form is submitted
-buttons.on("click", function (event) {
-    event.preventDefault();
-    console.log(Inputs);
-    var inputValues = Inputs.value;
-
-    if (inputValues === "") {
-        return;
-    }
-
-    Inputs.push({ inputValues });
-    Inputs.value = "";
-    console.log(Inputs);
-    storeItems();
-}); 

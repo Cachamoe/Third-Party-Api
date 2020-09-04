@@ -4,15 +4,6 @@ body {
   line-height: 1;
 }
 
-textarea{
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
-
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -40,6 +31,8 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  text-align: right;
+  padding: 5px;
 }
 
 .past {
@@ -70,3 +63,24 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
+.saveIcon {
+  color: white !important;
+  font-size: 2em;
+  overflow: hidden;
+  padding: 7px;
+}
+
+.textInput {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  overflow: auto;
+  outline: none;
+  width: 100%;
+}
+
+.textBackground {
+  background-color: whitesmoke;
+  color: black;
+  border-top: 1px solid white;
+}
