@@ -1,6 +1,6 @@
 # Third-Party-Api
 
-![](/image2/screenshot.png)
+![](https://github.com/Cachamoe/Third-Party-Api/blob/master/Assets/Screen%20Shot%202020-09-07%20at%2012.36.47%20PM.png)
 
 ## Overview
 This website allows the user to input and save their work schedule for the day!
