@@ -5,7 +5,7 @@
 ## Overview
 This website allows the user to input and save their work schedule for the day!
 
-Here is a link to the deployed webpage: [https://cachamoe.github.io/Third-Party-Api/]
+Here is a link to the deployed webpage: []
 
 I completed this assignment given the acceptance criteria: 
 
