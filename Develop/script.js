@@ -66,14 +66,14 @@ function changetimeColor() {
     $(".hour").each(function () {
         var hourChoices = parseInt($(this).attr("id").split("-")[1]);
         if (hourChoices < currentHour) {
-            $(this).addClass("past");
-            $(this).removeClass("present", "future");
+            $(this).siblings(".textBackground").addClass("past");
+            $(this).siblings(".textBackground").removeClass("present", "future");
         } else if (hourChoices === currentHour) {
-            $(this).addClass("present");
-            $(this).removeClass("past", "future");
+            $(this).siblings(".textBackground").addClass("present");
+            $(this).siblings(".textBackground").removeClass("past", "future");
         } else {
-            $(this).addClass("future");
-            $(this).removeClass("past", "present");
+            $(this).siblings(".textBackground").addClass("future");
+            $(this).siblings(".textBackground").removeClass("past", "present");
         }
     })
 }
