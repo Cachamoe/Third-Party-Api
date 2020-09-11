@@ -28,7 +28,7 @@ THEN the saved events persist
 ## Website Features
 1) The current date and time posted at the top of the page for convenience
 2) Type in and save your hourly work schedule for the day
-3) See what you have left to do in relation to the time that has already passed
+3) See what you have left to do in relation to the hours that have already passed
 
 
 ## Programs 
