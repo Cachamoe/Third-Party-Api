@@ -32,7 +32,7 @@ THEN the saved events persist
 
 
 ## Programs 
-HTML, CSS, Javascript
+HTML, CSS, Javascript, jQuery, moment.js, Bootstrap, and Font Awesome
 
 ## Author/s
 Caleb Chaney
