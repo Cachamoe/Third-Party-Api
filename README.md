@@ -34,5 +34,8 @@ THEN the saved events persist
 ## Programs 
 HTML, CSS, Javascript, jQuery, moment.js, Bootstrap, and Font Awesome
 
+## License 
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+
 ## Author/s
 Caleb Chaney
