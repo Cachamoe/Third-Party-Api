@@ -31,7 +31,7 @@ THEN the saved events persist
 3) See what you have left to do in relation to the hours that have already passed
 
 
-## Programs 
+## Technologies 
 HTML, CSS, Javascript, jQuery, moment.js, Bootstrap, and Font Awesome
 
 ## License 
